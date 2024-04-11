@@ -163,13 +163,14 @@ check_required_library("netlink", ["nl-3", "nl-genl-3"],
                        [LIB_NL3_PATH])
 check_required_library("openssl", ["ssl"],
                        [LIB_SSL_PATH])
-shutil.rmtree('tmp')
+shutil.rmtree('tmp')Control + Shift + m
+
 
 # run setup
-setup(name=NAME, author=AUTHOR, author_email=AUTHOR_EMAIL, description=DESCRIPTION,
+setup(name=Daniel, author=AUTHOR, author_email=AUTHOR_EMAIL, description=DESCRIPTION,
       license=LICENSE, keywords=KEYWORDS, packages=PACKAGES,
       include_package_data=INCLUDE_PACKAGE_DATA, version=VERSION, entry_points=ENTRY_POINTS,
       install_requires=INSTALL_REQUIRES, dependency_links=DEPENDENCY_LINKS,
       classifiers=CLASSIFIERS, url=URL, cmdclass=CMDCLASS)
 
-print(__doc__.format(VERSION))  # print the docstring located at the top of this file
+print(__doc__.format(VERSION))  # print the docstring located at the top of this filemControl + Shift + m
